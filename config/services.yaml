@@ -1,0 +1,145 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+
+- 设备:
+    - iStoreOS:
+        icon: /images/dashboard_icons/openwrt.png
+        href: http://192.168.2.1
+        description: 路由器
+        siteMonitor: http://192.168.2.1
+    - Unraid:
+        icon: /images/dashboard_icons/unraid.png
+        href: http://192.168.2.2
+        description: NAS
+        siteMonitor: http://192.168.2.2
+
+- 文件服务:
+    - Alist:
+        icon: /images/HD-Icons-main/svg/Alist_A.svg
+        href: http://192.168.2.2:5244
+        description: 网盘挂载
+        container: AList
+    - FileBrowser:
+        icon: /images/HD-Icons-main/border-radius/Filebrowser_A.png
+        href: http://192.168.2.2:8000
+        description: Unraid 本地文件管理
+        container: FileBrowser
+    - Duplicati:
+        icon: /images/HD-Icons-main/svg/Duplicati_A.svg
+        href: http://192.168.2.2:8200
+        description: 数据备份
+        container: duplicati
+    - Syncthing:
+        icon: /images/HD-Icons-main/border-radius/Syncthing_A.png
+        href: http://192.168.2.2:8384
+        description: 跨平台文件同步服务
+        container: syncthing
+
+- 网络工具:
+    - SpeedTest:
+        icon: /images/HD-Icons-main/svg/Librespeed_A.svg
+        href: http://192.168.2.2:9000
+        description: 内网测速工具
+        container: SpeedTest
+
+    - UnLockMusic:
+        icon: /images/HD-Icons-main/svg/Unlock-music_A.svg
+        href: https://ncm.spacedj.cn
+        description: 音乐解锁
+        siteMonitor: https://ncm.spacedj.cn
+
+    - Zerotier:
+        icon: /images/HD-Icons-main/border-radius/Zerotier_A.png
+        href: https://my.zerotier.com
+        description: 虚拟组网
+        siteMonitor: https://my.zerotier.com
+
+    - Ping:
+        icon: /images/HD-Icons-main/svg/It-tools_A.svg
+        href: https://ping.chinaz.com
+        description: ChinaZ 全国多地 ping 测试
+        siteMonitor: https://ping.chinaz.com
+
+    - IP:
+        icon: /images/HD-Icons-main/svg/Ipw.cn_A.svg
+        href: https://www.ip138.com
+        description: IP 地址查询
+        siteMonitor: https://www.ip138.com
+
+- 书影音、照片:
+    - Immich:
+        icon: /images/HD-Icons-main/border-radius/Immich_D.png
+        href: http://192.168.2.2:2283
+        description: 照片管理
+        container: immich_server
+        widget:
+          type: immich
+          url: http://192.168.2.2:2283
+          key: #可以到 Immich 后台创建 API Key，替换为自己的 Key
+    - Emby:
+        icon: /images/HD-Icons-main/border-radius/Emby_A.png
+        href: http://192.168.2.2:8096
+        description: 影视媒体库
+        container: emby
+        widget:
+          type: emby
+          url: http://192.168.2.2:8096
+          key: #可以到 Emby 后台创建 API Key，替换为自己的 Key
+          enableBlocks: true # optional, defaults to false
+          enableNowPlaying: false # optional, defaults to true
+          enableUser: false # optional, defaults to false
+    - Calibre:
+        icon: /images/HD-Icons-main/svg/Calibre-web_A.svg
+        href: http://192.168.2.2:8083
+        description: 电子书管理
+        container: calibre-web
+        widget:
+          type: calibreweb
+          url: http://192.168.2.2:8083
+          username: #你的 Calibre 用户名
+          password: #你的 Calibre 密码
+
+    - Navidrome:
+        icon: /images/HD-Icons-main/border-radius/Navidrome_B.png
+        href: http://192.168.2.2:4533
+        description: 音乐库
+        container: navidrome
+        # widget:
+        #   type: navidrome
+        #   url: http://192.168.2.2:4533
+        #   user: slark
+        #   token: GMruJ@bxp8Gi2zMnhFwr #md5(password + salt)
+        #   salt: randomsalt
+    - TinyMediaManager:
+        icon: /images/HD-Icons-main/border-radius/Tmm_A.png
+        href: http://192.168.2.2:5800
+        description: 影视刮削器
+        container: tinymediamanager
+
+- 下载工具:
+    - AriaNG:
+        icon: /images/HD-Icons-main/border-radius/Aria2_C.png
+        href: http://192.168.2.2:6880
+        description: Aria2 WebUI
+        container: ariang
+    - BaiduDisk:
+        icon: /images/HD-Icons-main/border-radius/Baidudrive_B.png
+        href: http://192.168.2.2:4800
+        description: 百度网盘客户端
+        container: baidudisk
+    - qBittorrent:
+        icon: /images/HD-Icons-main/border-radius/Qbittorrent_A.png
+        href: http://192.168.2.2:8080
+        description: BT、PT 客户端
+        container: qbittorrent
+    - 迅雷:
+        icon: /images/HD-Icons-main/border-radius/Xunlei_A.png
+        href: http://192.168.2.2:2345
+        description: 迅雷 Web 版
+        container: Xunlei
+    - Metube:
+        icon: /images/HD-Icons-main/border-radius/Metube_A.png
+        href: http://192.168.2.2:8081
+        description: 网络视频下载
+        container: MeTube

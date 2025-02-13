@@ -1,0 +1,36 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/settings
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+theme: dark # or light
+background:
+  image: /images/background.jpg
+  blur: sm
+  # saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+  # brightness: 150 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+  # opacity: 100 # 0-100
+
+layout:
+  设备:
+    style: row
+    columns: 5
+
+  书影音、照片:
+    style: row
+    columns: 5
+
+  文件服务:
+    style: row
+    columns: 5
+
+  下载工具:
+    style: row
+    columns: 5
+
+  网络工具:
+    style: row
+    columns: 5

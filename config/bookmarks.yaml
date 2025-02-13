@@ -1,0 +1,29 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+# - Social:
+#     - YouTube:
+#         - abbr: YT
+#           href: https://www.youtube.com
+#     - Bilibili:
+#         - abbr: BI
+#           href: https://www.bilibili.com
+#     - Reddit-Unraid:
+#         - abbr: RE
+#           href: https://www.reddit.com/r/unRAID/
+#     - V2EX:
+#         - abbr: V2
+#           href: https://www.v2ex.com
+          
+          
+
+# - Social:
+#     - Reddit:
+#         - abbr: RE
+#           href: https://reddit.com/
+
+# - Entertainment:
+#     - YouTube:
+#         - abbr: YT
+#           href: https://youtube.com/
